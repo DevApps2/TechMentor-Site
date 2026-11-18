@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de privacidade | TechMentor</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+  <link rel="stylesheet" href="css/estilo.css">
+  <script src="js/config.js"></script>
+</head>
+<body>
+  <!--
+    ATENÇÃO: este texto é um RASCUNHO baseado no que o formulário realmente coleta. Antes de divulgar o site,
+    peça a revisão de quem cuida da parte jurídica (LGPD): nome da entidade responsável, prazo de guarda dos dados
+    e canal do encarregado. Quando o texto mudar, mude também VERSAO_POLITICA em js/config.js.
+  -->
+  <header class="topo">
+    <div class="contorno">
+      <a class="marca" href="./" aria-label="TechMentor, início">
+        <img src="img/logo.svg" alt="" width="36" height="36">
+        <strong>TechMentor</strong>
+      </a>
+      <nav><a class="botao claro" href="./">Voltar ao site</a></nav>
+    </div>
+  </header>
+
+  <main class="contorno texto">
+    <h1>Política de privacidade</h1>
+    <p class="mudo">Versão <span id="versao">2026-11-18</span> · vale para o formulário “Seja nosso parceiro”.</p>
+
+    <h2>Quem somos</h2>
+    <p>O TechMentor é um aplicativo que conecta mulheres que estão entrando em tecnologia a mentoras, cursos e oportunidades. A equipe do projeto é a responsável pelo tratamento dos dados descritos aqui.</p>
+
+    <h2>Quais dados coletamos neste formulário</h2>
+    <ul>
+      <li>Nome da instituição e tipo (empresa, ONG ou profissional independente);</li>
+      <li>CNPJ, quando você informa;</li>
+      <li>Site da instituição, quando você informa;</li>
+      <li>Nome de quem responde pela instituição e e-mail de contato;</li>
+      <li>O texto que você escreve sobre o que pretende oferecer;</li>
+      <li>A data e a versão desta política no momento em que você aceita, como prova do seu consentimento.</li>
+    </ul>
+    <p>Para limitar o excesso de pedidos, o endereço de rede (IP) de quem envia é conferido na hora do envio e mantido apenas na memória do servidor, por até uma hora. Ele não é gravado junto com o pedido.</p>
+
+    <h2>Para que usamos esses dados</h2>
+    <ul>
+      <li>Analisar o seu pedido de parceria;</li>
+      <li>Responder por e-mail: confirmar o recebimento, aprovar (com o convite para criar a senha) ou explicar o motivo de uma recusa;</li>
+      <li>Se o pedido for aprovado, criar a conta da instituição e conferir os dados dela (site, domínio do e-mail e documento do responsável).</li>
+    </ul>
+    <p>Não usamos esses dados para publicidade e não os vendemos.</p>
+
+    <h2>Quem tem acesso</h2>
+    <p>As administradoras do TechMentor, que analisam os pedidos. Para funcionar, o projeto usa serviços de hospedagem e de envio de e-mail, que processam os dados apenas para entregar o serviço. Se o pedido for aprovado, o nome da instituição aparece como crédito dos cursos no aplicativo, para as alunas.</p>
+
+    <h2>Por quanto tempo guardamos</h2>
+    <p>Pelo tempo necessário para analisar o pedido e, se for aprovado, durante a parceria. Pedidos recusados podem ser apagados a seu pedido.</p>
+
+    <h2>Os seus direitos</h2>
+    <p>Pela Lei Geral de Proteção de Dados (LGPD), você pode pedir a confirmação de que tratamos os seus dados, o acesso a eles, a correção de dados incorretos, a exclusão dos dados e a retirada do consentimento, a qualquer momento. Basta escrever para o e-mail abaixo.</p>
+
+    <h2>Contato</h2>
+    <p>Dúvidas e pedidos sobre os seus dados: <a href="mailto:techmentor.apps@gmail.com" data-email>techmentor.apps@gmail.com</a>.</p>
+  </main>
+
+  <script>
+    // Mostra a versão e o e-mail definidos em js/config.js, para não ficarem diferentes do que o formulário envia.
+    (function () {
+      var cfg = window.TECHMENTOR || {}
+      if (cfg.VERSAO_POLITICA) document.getElementById('versao').textContent = cfg.VERSAO_POLITICA
+      if (cfg.EMAIL) document.querySelectorAll('[data-email]').forEach(function (a) { a.href = 'mailto:' + cfg.EMAIL; a.textContent = cfg.EMAIL })
+    })()
+  </script>
+</body>
+</html>
