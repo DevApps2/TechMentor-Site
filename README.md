@@ -2,6 +2,8 @@
 
 Página "Seja nosso parceiro" do TechMentor: apresenta o programa para instituições, ONGs e criadores de conteúdo e tem o formulário de pedido de parceria, que chega à fila da equipe pela API.
 
+**Site no ar:** https://devapps2.github.io/TechMentor-Site/
+
 É um site **estático** (HTML, CSS e um JavaScript pequeno), sem instalar nada para rodar e sem etapa de build. Serve direto no GitHub Pages.
 
 ```
@@ -32,7 +34,7 @@ O `js/config.js` já aponta para `http://localhost:8080/techmentor/api`.
 ## Publicar no GitHub Pages
 
 1. No GitHub, repositório → **Settings → Pages**. Em *Build and deployment*, escolha **Deploy from a branch**, branch `main`, pasta `/ (root)`.
-2. O endereço sai como `https://devapps2.github.io/TechMentor-Site/` (o GitHub mostra na própria tela).
+2. O endereço do site é `https://devapps2.github.io/TechMentor-Site/`.
 3. Edite `js/config.js` com os endereços **de produção**:
    - `API_URL`: a API com **https** (uma página https não consegue chamar uma API http);
    - `PORTAL_URL`: onde o portal das parceiras estiver publicado.
